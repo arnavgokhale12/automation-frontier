@@ -9,8 +9,12 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const { meta } = getPatchNoteContent(slug)
-  return { title: `Patch v${meta.version} — ${meta.title}` }
+  try {
+    const { meta } = getPatchNoteContent(slug)
+    return { title: `Patch v${meta.version} — ${meta.title}` }
+  } catch {
+    return { title: 'Patch Notes — Automation Frontier Dashboard' }
+  }
 }
 
 const mdxComponents = { Buff, Nerf, SectorTag }

@@ -12,7 +12,7 @@ export default function PatchNotesPage() {
         <div className="text-muted text-xs tracking-widest mb-1">CIVILIZATION PATCH NOTES</div>
         <h1 className="text-neon text-2xl font-bold font-mono">Changelog</h1>
         <p className="text-muted text-sm mt-2">
-          Economic and labor updates. What changed and what's still broken.
+          Economic and labor updates. What changed and what&apos;s still broken.
         </p>
       </div>
 
