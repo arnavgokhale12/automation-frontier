@@ -8,10 +8,12 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "ingest": "tsx --env-file=.env.local scripts/ingest.ts"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.76",
+    "@tailwindcss/typography": "^0.5.19",
     "ai": "^6.0.177",
     "gray-matter": "^4.0.3",
     "next": "15.5.18",
