@@ -3,7 +3,7 @@ import RadarChart from '@/components/RadarChart'
 import type { SandboxEntry } from '@/lib/types'
 import Link from 'next/link'
 
-export default function SandboxResult({ entry }: { entry: SandboxEntry | null; loading?: boolean }) {
+export default function SandboxResult({ entry }: { entry: SandboxEntry | null }) {
   if (!entry) return null
 
   return (
