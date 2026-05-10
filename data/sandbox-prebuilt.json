@@ -1,0 +1,177 @@
+{
+  "accountant": {
+    "title": "Accountant",
+    "components": { "knowledgeWork": 90, "judgment": 55, "trust": 60, "physicalExecution": 5, "legalLiability": 75, "humanPreference": 25, "costToDeploy": 35 },
+    "summary": "Accounting is highly automatable at the data-processing layer — reconciliation, reporting, tax preparation. The blocker is legal liability: CPAs sign documents, and no firm will let an LLM take that exposure. Expect hybrid workflows, not replacement.",
+    "bottleneck": "Legal Liability",
+    "industryId": "financial-services"
+  },
+  "lawyer": {
+    "title": "Lawyer",
+    "components": { "knowledgeWork": 80, "judgment": 75, "trust": 85, "physicalExecution": 5, "legalLiability": 95, "humanPreference": 60, "costToDeploy": 50 },
+    "summary": "Document review and contract drafting are already being automated. But a lawyer is also an officer of the court — there's a credentialing and liability structure that makes AI substitution legally impermissible, not just technically hard.",
+    "bottleneck": "Legal Liability",
+    "industryId": "legal-services"
+  },
+  "radiologist": {
+    "title": "Radiologist",
+    "components": { "knowledgeWork": 85, "judgment": 80, "trust": 80, "physicalExecution": 15, "legalLiability": 90, "humanPreference": 55, "costToDeploy": 65 },
+    "summary": "AI reads medical images at or above radiologist accuracy in narrow tasks. The bottleneck is FDA approval, malpractice liability, and the fact that false negatives kill people — so human sign-off is mandated by regulation and insurance.",
+    "bottleneck": "Regulation",
+    "industryId": "healthcare"
+  },
+  "software engineer": {
+    "title": "Software Engineer",
+    "components": { "knowledgeWork": 95, "judgment": 65, "trust": 40, "physicalExecution": 5, "legalLiability": 30, "humanPreference": 45, "costToDeploy": 20 },
+    "summary": "The highest automation exposure of any knowledge job. AI writes, reviews, and tests code today. What's left is judgment: architecture decisions, tradeoff navigation, stakeholder translation. The job is not going away — it's shifting to a different layer.",
+    "bottleneck": "Judgment",
+    "industryId": "software-dev"
+  },
+  "nurse": {
+    "title": "Registered Nurse",
+    "components": { "knowledgeWork": 65, "judgment": 70, "trust": 90, "physicalExecution": 75, "legalLiability": 80, "humanPreference": 85, "costToDeploy": 70 },
+    "summary": "Nursing combines physical patient care, emotional presence, and real-time clinical judgment in a way that no current robot or LLM can replicate end-to-end. AI handles documentation and triage support, but the bedside role is structurally human for a long time.",
+    "bottleneck": "Physical Execution",
+    "industryId": "healthcare"
+  },
+  "teacher": {
+    "title": "Teacher (K-12)",
+    "components": { "knowledgeWork": 60, "judgment": 65, "trust": 90, "physicalExecution": 30, "legalLiability": 50, "humanPreference": 95, "costToDeploy": 45 },
+    "summary": "Parents and school boards have strong revealed preferences for human teachers, regardless of AI tutoring efficacy. AI excels at personalized practice and feedback loops, but the in-classroom, relationship-based role is blocked by trust and human preference — not capability.",
+    "bottleneck": "Human Preference",
+    "industryId": "education"
+  },
+  "therapist": {
+    "title": "Therapist / Counselor",
+    "components": { "knowledgeWork": 65, "judgment": 80, "trust": 95, "physicalExecution": 10, "legalLiability": 70, "humanPreference": 92, "costToDeploy": 30 },
+    "summary": "Therapy is almost entirely bottlenecked by trust and human preference. Patients know they could talk to an AI — many do. But for high-stakes mental health work, the therapeutic alliance with a human is what clients are paying for.",
+    "bottleneck": "Trust",
+    "industryId": "healthcare"
+  },
+  "financial analyst": {
+    "title": "Financial Analyst",
+    "components": { "knowledgeWork": 88, "judgment": 65, "trust": 55, "physicalExecution": 5, "legalLiability": 60, "humanPreference": 35, "costToDeploy": 30 },
+    "summary": "Quant roles and data-heavy analysis are already heavily automated. The remaining value is in judgment calls on novel situations and client-facing trust — no institution will let an LLM sign off on a $50M position without a human in the loop.",
+    "bottleneck": "Legal Liability",
+    "industryId": "financial-services"
+  },
+  "truck driver": {
+    "title": "Truck Driver",
+    "components": { "knowledgeWork": 30, "judgment": 50, "trust": 40, "physicalExecution": 85, "legalLiability": 70, "humanPreference": 30, "costToDeploy": 80 },
+    "summary": "Self-driving trucks work on highways. The last-mile problem — loading docks, weather, unexpected obstacles, liability for 80,000 lb vehicles — is where physical friction and regulation hold. Highway automation is a solved problem with a regulatory timeline attached.",
+    "bottleneck": "Regulation",
+    "industryId": "transportation"
+  },
+  "construction worker": {
+    "title": "Construction Worker",
+    "components": { "knowledgeWork": 25, "judgment": 45, "trust": 35, "physicalExecution": 95, "legalLiability": 55, "humanPreference": 25, "costToDeploy": 90 },
+    "summary": "Construction is the hardest physical problem in robotics. Unstructured environments, varying materials, and coordination across dozens of trades make it deeply resistant to automation. Capital cost to deploy robotics at this fidelity is currently prohibitive.",
+    "bottleneck": "Physical Execution",
+    "industryId": "construction"
+  },
+  "chef": {
+    "title": "Chef",
+    "components": { "knowledgeWork": 50, "judgment": 65, "trust": 50, "physicalExecution": 80, "legalLiability": 30, "humanPreference": 75, "costToDeploy": 85 },
+    "summary": "Food production at scale is highly automated. The fine dining chef is a different thing: artistry, improvisation, and human taste preference are the product. Diners know the chef is a person and that's part of what they're buying.",
+    "bottleneck": "Human Preference",
+    "industryId": "retail"
+  },
+  "customer service rep": {
+    "title": "Customer Service Representative",
+    "components": { "knowledgeWork": 70, "judgment": 45, "trust": 55, "physicalExecution": 5, "legalLiability": 20, "humanPreference": 50, "costToDeploy": 15 },
+    "summary": "Already the most automated knowledge role. Chatbots handle 60-80% of tier-1 volume in most large companies. The remaining human work is escalations, edge cases, and customers who explicitly request a person — which is itself a shrinking preference.",
+    "bottleneck": "Human Preference",
+    "industryId": "retail"
+  },
+  "journalist": {
+    "title": "Journalist",
+    "components": { "knowledgeWork": 75, "judgment": 70, "trust": 65, "physicalExecution": 20, "legalLiability": 40, "humanPreference": 60, "costToDeploy": 20 },
+    "summary": "Structured reporting (earnings summaries, box scores, weather) is already AI-generated at major outlets. Investigative journalism requires source trust, physical presence, and editorial judgment that AI cannot replicate. The commodity layer will collapse; the premium layer will not.",
+    "bottleneck": "Trust",
+    "industryId": "media"
+  },
+  "paralegal": {
+    "title": "Paralegal",
+    "components": { "knowledgeWork": 85, "judgment": 50, "trust": 55, "physicalExecution": 5, "legalLiability": 65, "humanPreference": 30, "costToDeploy": 25 },
+    "summary": "Document review, contract analysis, and case research are being absorbed by AI tools at law firms now. Paralegals face the same liability ceiling as lawyers — but they're below it, making them more automatable. This is already happening.",
+    "bottleneck": "Legal Liability",
+    "industryId": "legal-services"
+  },
+  "hr manager": {
+    "title": "HR Manager",
+    "components": { "knowledgeWork": 65, "judgment": 65, "trust": 75, "physicalExecution": 5, "legalLiability": 60, "humanPreference": 70, "costToDeploy": 25 },
+    "summary": "Recruiting, screening, and compliance workflows are automatable. The HR role that survives is the human-facing one: conflict resolution, performance conversations, and organizational culture — all of which require the credibility of a person.",
+    "bottleneck": "Trust",
+    "industryId": "financial-services"
+  },
+  "pharmacist": {
+    "title": "Pharmacist",
+    "components": { "knowledgeWork": 75, "judgment": 70, "trust": 75, "physicalExecution": 40, "legalLiability": 90, "humanPreference": 60, "costToDeploy": 55 },
+    "summary": "Robotic dispensing handles filling. The pharmacist's remaining value is the medication counseling and interaction screening that requires a licensed professional by law. Deregulation is the unlock — not technology.",
+    "bottleneck": "Regulation",
+    "industryId": "healthcare"
+  },
+  "architect": {
+    "title": "Architect",
+    "components": { "knowledgeWork": 70, "judgment": 75, "trust": 65, "physicalExecution": 20, "legalLiability": 80, "humanPreference": 70, "costToDeploy": 40 },
+    "summary": "AI generates design options faster than any human. The architect's legal stamp on building documents is a regulated liability instrument — unlicensed practice is a crime. Beyond liability, clients have strong preferences for human creative authorship at this price point.",
+    "bottleneck": "Legal Liability",
+    "industryId": "construction"
+  },
+  "tax preparer": {
+    "title": "Tax Preparer",
+    "components": { "knowledgeWork": 88, "judgment": 50, "trust": 55, "physicalExecution": 5, "legalLiability": 70, "humanPreference": 35, "costToDeploy": 20 },
+    "summary": "Simple tax prep is fully automatable and largely already automated (TurboTax). The surviving role is complex business tax, estate planning, and audit representation — all of which carry IRS authorization and liability exposure that requires a credentialed human.",
+    "bottleneck": "Legal Liability",
+    "industryId": "financial-services"
+  },
+  "loan officer": {
+    "title": "Loan Officer",
+    "components": { "knowledgeWork": 75, "judgment": 60, "trust": 65, "physicalExecution": 5, "legalLiability": 75, "humanPreference": 55, "costToDeploy": 30 },
+    "summary": "Underwriting models are already AI. The loan officer persists because of CFPB fair lending rules requiring explainable decisions and human accountability for credit denial. The compliance layer is the moat, not the knowledge work.",
+    "bottleneck": "Regulation",
+    "industryId": "financial-services"
+  },
+  "insurance adjuster": {
+    "title": "Insurance Adjuster",
+    "components": { "knowledgeWork": 72, "judgment": 65, "trust": 60, "physicalExecution": 35, "legalLiability": 70, "humanPreference": 45, "costToDeploy": 40 },
+    "summary": "Claims triage and damage estimation are heavily automated. Complex claims — litigation exposure, disputed liability, catastrophe events — require human judgment and legal authority that insurance regulations mandate stays with a licensed adjuster.",
+    "bottleneck": "Regulation",
+    "industryId": "financial-services"
+  },
+  "recruiter": {
+    "title": "Recruiter",
+    "components": { "knowledgeWork": 70, "judgment": 60, "trust": 75, "physicalExecution": 5, "legalLiability": 45, "humanPreference": 70, "costToDeploy": 20 },
+    "summary": "Resume screening and sourcing are automated. What candidates and hiring managers actually want is a human who can read between the lines, build relationships, and sell them on each other. The trust and relationship layer is highly resistant to AI substitution.",
+    "bottleneck": "Trust",
+    "industryId": "financial-services"
+  },
+  "data analyst": {
+    "title": "Data Analyst",
+    "components": { "knowledgeWork": 90, "judgment": 60, "trust": 40, "physicalExecution": 5, "legalLiability": 25, "humanPreference": 30, "costToDeploy": 15 },
+    "summary": "Data analysis — querying, visualization, reporting — is the clearest automation target after customer service. AI generates SQL, interprets results, and builds dashboards. The surviving role is asking the right questions and translating for business stakeholders.",
+    "bottleneck": "Judgment",
+    "industryId": "software-dev"
+  },
+  "copywriter": {
+    "title": "Copywriter",
+    "components": { "knowledgeWork": 80, "judgment": 55, "trust": 45, "physicalExecution": 5, "legalLiability": 20, "humanPreference": 65, "costToDeploy": 10 },
+    "summary": "High-volume content generation (ads, product descriptions, SEO articles) is dominated by AI. The surviving copywriting is brand-defining creative work where human authorship and voice are the product — and even there, AI is encroaching fast.",
+    "bottleneck": "Human Preference",
+    "industryId": "media"
+  },
+  "medical coder": {
+    "title": "Medical Coder",
+    "components": { "knowledgeWork": 88, "judgment": 45, "trust": 40, "physicalExecution": 5, "legalLiability": 70, "humanPreference": 15, "costToDeploy": 25 },
+    "summary": "Medical coding is one of the most automatable healthcare-adjacent jobs. It's pure classification against a known schema (ICD-10, CPT codes). The blocker is audit liability — coders sign off on claims, and fraudulent or negligent coding carries criminal penalties.",
+    "bottleneck": "Legal Liability",
+    "industryId": "healthcare"
+  },
+  "real estate agent": {
+    "title": "Real Estate Agent",
+    "components": { "knowledgeWork": 60, "judgment": 60, "trust": 80, "physicalExecution": 25, "legalLiability": 55, "humanPreference": 80, "costToDeploy": 20 },
+    "summary": "Listing search and market analysis are automated. But a home purchase is the largest transaction most people ever make — buyers and sellers want human representation, and state licensing laws require a licensed agent in the transaction loop in most jurisdictions.",
+    "bottleneck": "Human Preference",
+    "industryId": "retail"
+  }
+}

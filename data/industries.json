@@ -1,0 +1,122 @@
+[
+  {
+    "id": "software-dev",
+    "name": "Software Development",
+    "aiCapability": 5,
+    "physicalFriction": 1,
+    "regulation": 2,
+    "trustNeed": 3,
+    "automationRisk": 4.4,
+    "bottleneckTypes": [],
+    "blsEmployment": 4000000,
+    "occupationIds": ["15-1252.00", "15-1251.00", "15-1299.08"]
+  },
+  {
+    "id": "financial-services",
+    "name": "Financial Services",
+    "aiCapability": 4,
+    "physicalFriction": 1,
+    "regulation": 5,
+    "trustNeed": 4,
+    "automationRisk": 3.2,
+    "bottleneckTypes": ["regulation", "trust"],
+    "blsEmployment": 6800000,
+    "occupationIds": ["13-2051.00", "13-2052.00", "13-1041.00"]
+  },
+  {
+    "id": "healthcare",
+    "name": "Healthcare",
+    "aiCapability": 3,
+    "physicalFriction": 3,
+    "regulation": 5,
+    "trustNeed": 5,
+    "automationRisk": 2.2,
+    "bottleneckTypes": ["regulation", "trust"],
+    "blsEmployment": 18000000,
+    "occupationIds": ["29-1141.00", "29-1215.00", "29-2061.00"]
+  },
+  {
+    "id": "legal-services",
+    "name": "Legal Services",
+    "aiCapability": 4,
+    "physicalFriction": 1,
+    "regulation": 5,
+    "trustNeed": 4,
+    "automationRisk": 3.2,
+    "bottleneckTypes": ["regulation", "trust"],
+    "blsEmployment": 1200000,
+    "occupationIds": ["23-1011.00", "23-2011.00", "23-1012.00"]
+  },
+  {
+    "id": "transportation",
+    "name": "Transportation & Logistics",
+    "aiCapability": 3,
+    "physicalFriction": 5,
+    "regulation": 3,
+    "trustNeed": 3,
+    "automationRisk": 2.6,
+    "bottleneckTypes": ["physical"],
+    "blsEmployment": 7500000,
+    "occupationIds": ["53-3032.00", "53-1041.00", "53-7062.00"]
+  },
+  {
+    "id": "construction",
+    "name": "Construction",
+    "aiCapability": 2,
+    "physicalFriction": 5,
+    "regulation": 3,
+    "trustNeed": 3,
+    "automationRisk": 2.2,
+    "bottleneckTypes": ["physical"],
+    "blsEmployment": 7800000,
+    "occupationIds": ["47-2061.00", "47-2031.00", "47-1011.00"]
+  },
+  {
+    "id": "education",
+    "name": "Education",
+    "aiCapability": 3,
+    "physicalFriction": 2,
+    "regulation": 3,
+    "trustNeed": 5,
+    "automationRisk": 2.8,
+    "bottleneckTypes": ["trust"],
+    "blsEmployment": 13000000,
+    "occupationIds": ["25-2021.00", "25-1099.00", "25-3021.00"]
+  },
+  {
+    "id": "media",
+    "name": "Media & Journalism",
+    "aiCapability": 4,
+    "physicalFriction": 1,
+    "regulation": 2,
+    "trustNeed": 3,
+    "automationRisk": 4.0,
+    "bottleneckTypes": [],
+    "blsEmployment": 900000,
+    "occupationIds": ["27-3022.00", "27-1024.00", "27-3011.00"]
+  },
+  {
+    "id": "retail",
+    "name": "Retail & Customer Service",
+    "aiCapability": 3,
+    "physicalFriction": 3,
+    "regulation": 2,
+    "trustNeed": 3,
+    "automationRisk": 3.2,
+    "bottleneckTypes": [],
+    "blsEmployment": 15000000,
+    "occupationIds": ["41-2011.00", "41-1011.00", "43-4051.00"]
+  },
+  {
+    "id": "manufacturing",
+    "name": "Manufacturing",
+    "aiCapability": 3,
+    "physicalFriction": 5,
+    "regulation": 3,
+    "trustNeed": 2,
+    "automationRisk": 2.8,
+    "bottleneckTypes": ["physical"],
+    "blsEmployment": 12800000,
+    "occupationIds": ["51-4041.00", "51-2031.00", "51-1011.00"]
+  }
+]

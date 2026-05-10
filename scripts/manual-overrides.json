@@ -1,0 +1,12 @@
+{
+  "software-dev":       { "regulation": 2, "trustNeed": 3 },
+  "financial-services": { "regulation": 5, "trustNeed": 4 },
+  "healthcare":         { "regulation": 5, "trustNeed": 5 },
+  "legal-services":     { "regulation": 5, "trustNeed": 4 },
+  "transportation":     { "regulation": 3, "trustNeed": 3 },
+  "construction":       { "regulation": 3, "trustNeed": 3 },
+  "education":          { "regulation": 3, "trustNeed": 5 },
+  "media":              { "regulation": 2, "trustNeed": 3 },
+  "retail":             { "regulation": 2, "trustNeed": 3 },
+  "manufacturing":      { "regulation": 3, "trustNeed": 2 }
+}

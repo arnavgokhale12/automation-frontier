@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-bg: #0a0a0f;
+  --color-surface: #111118;
+  --color-border: #1a1a2e;
+  --color-neon: #00ff88;
+  --color-cyan: #00bfff;
+  --color-amber: #ff6b35;
+  --color-muted: #555566;
+  --color-dim: #333344;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+:root {
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #cccccc;
+  font-family: var(--font-mono), monospace;
+}
+
+* {
+  border-color: #1a1a2e;
+}
+
+::selection {
+  background: #00ff8830;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #1a1a2e; border-radius: 2px; }
