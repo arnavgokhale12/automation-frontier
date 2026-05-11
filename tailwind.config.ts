@@ -9,14 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#0a0a0f',
-        surface: '#111118',
-        border: '#1a1a2e',
-        neon: '#00ff88',
-        cyan: '#00bfff',
-        amber: '#ff6b35',
-        muted: '#555566',
-        dim: '#333344',
+        bg: '#080b10',
+        surface: '#111720',
+        panel: '#151d28',
+        'panel-2': '#1a2431',
+        border: '#263242',
+        neon: '#4ade80',
+        cyan: '#38bdf8',
+        amber: '#f59e0b',
+        muted: '#8a95a6',
+        dim: '#3a4554',
+        ink: '#e6edf3',
       },
       fontFamily: {
         mono: ['var(--font-mono)', 'monospace'],

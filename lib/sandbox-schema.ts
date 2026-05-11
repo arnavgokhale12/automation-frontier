@@ -14,6 +14,8 @@ export const sandboxSchema = z.object({
   summary: z.string().max(500),
   bottleneck: z.string(),
   industryId: z.string(),
+  confidence: z.enum(['Curated preset', 'Local estimate', 'AI assisted']).optional(),
+  analysisMode: z.string().optional(),
 })
 
 export type SandboxOutput = z.infer<typeof sandboxSchema>

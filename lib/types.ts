@@ -35,6 +35,8 @@ export interface SandboxEntry {
   summary: string
   bottleneck: string
   industryId: string
+  confidence?: 'Curated preset' | 'Local estimate' | 'AI assisted'
+  analysisMode?: string
 }
 
 export interface PatchNoteMeta {
