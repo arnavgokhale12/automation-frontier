@@ -173,5 +173,40 @@
     "summary": "Listing search and market analysis are automated. But a home purchase is the largest transaction most people ever make — buyers and sellers want human representation, and state licensing laws require a licensed agent in the transaction loop in most jurisdictions.",
     "bottleneck": "Human Preference",
     "industryId": "retail"
+  },
+  "data scientist": {
+    "title": "Data Scientist",
+    "components": { "knowledgeWork": 94, "judgment": 72, "trust": 42, "physicalExecution": 5, "legalLiability": 28, "humanPreference": 35, "costToDeploy": 25 },
+    "summary": "Data science is highly exposed because AI can generate queries, clean data, test models, and summarize findings. The remaining moat is judgment: choosing the right question, validating messy inputs, and translating results into decisions people trust.",
+    "bottleneck": "Judgment",
+    "industryId": "software-dev"
+  },
+  "product manager": {
+    "title": "Product Manager",
+    "components": { "knowledgeWork": 70, "judgment": 82, "trust": 72, "physicalExecution": 5, "legalLiability": 25, "humanPreference": 68, "costToDeploy": 20 },
+    "summary": "AI can draft specs, summarize feedback, and analyze usage data. The product manager role remains human-heavy because the work is prioritization under uncertainty, stakeholder trust, and accountability for tradeoffs.",
+    "bottleneck": "Judgment",
+    "industryId": "software-dev"
+  },
+  "cybersecurity analyst": {
+    "title": "Cybersecurity Analyst",
+    "components": { "knowledgeWork": 85, "judgment": 78, "trust": 65, "physicalExecution": 5, "legalLiability": 70, "humanPreference": 45, "costToDeploy": 45 },
+    "summary": "Security monitoring, triage, and log analysis are strong AI use cases. The bottleneck is accountability: false positives are expensive, false negatives are dangerous, and incident response requires human judgment under pressure.",
+    "bottleneck": "Legal Liability",
+    "industryId": "software-dev"
+  },
+  "ux designer": {
+    "title": "UX Designer",
+    "components": { "knowledgeWork": 72, "judgment": 70, "trust": 52, "physicalExecution": 5, "legalLiability": 20, "humanPreference": 72, "costToDeploy": 18 },
+    "summary": "AI can generate layouts, copy variants, and research summaries quickly. The durable part of UX is understanding users, resolving product constraints, and making taste judgments that teams are willing to ship.",
+    "bottleneck": "Human Preference",
+    "industryId": "media"
+  },
+  "electrician": {
+    "title": "Electrician",
+    "components": { "knowledgeWork": 35, "judgment": 60, "trust": 62, "physicalExecution": 92, "legalLiability": 78, "humanPreference": 45, "costToDeploy": 86 },
+    "summary": "Diagnostics and planning can be assisted by software, but the core work happens in physical spaces with safety risk, code compliance, and site-specific surprises. Automation is more likely to augment electricians than replace them.",
+    "bottleneck": "Physical Execution",
+    "industryId": "construction"
   }
 }

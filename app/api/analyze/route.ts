@@ -1,6 +1,7 @@
 import { generateObject } from 'ai'
 import { anthropic } from '@ai-sdk/anthropic'
 import { sandboxSchema, SYSTEM_PROMPT } from '@/lib/sandbox-schema'
+import { analyzeLocally } from '@/lib/local-sandbox'
 import prebuilt from '@/data/sandbox-prebuilt.json'
 
 const PREBUILT = prebuilt as Record<string, unknown>
@@ -14,7 +15,15 @@ export async function POST(req: Request) {
 
   const key = title.toLowerCase().trim()
   if (PREBUILT[key]) {
-    return Response.json(PREBUILT[key])
+    return Response.json({
+      ...PREBUILT[key],
+      confidence: 'Curated preset',
+      analysisMode: 'Hand-tuned example analysis',
+    })
+  }
+
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return Response.json(analyzeLocally(title))
   }
 
   try {
@@ -24,8 +33,12 @@ export async function POST(req: Request) {
       system: SYSTEM_PROMPT,
       prompt: `Analyze the automation potential for this job: ${title}`,
     })
-    return Response.json(object)
+    return Response.json({
+      ...object,
+      confidence: 'AI assisted',
+      analysisMode: 'Generated with Claude using the dashboard scoring schema',
+    })
   } catch {
-    return Response.json({ error: 'Analysis failed. Please try again.' }, { status: 500 })
+    return Response.json(analyzeLocally(title))
   }
 }

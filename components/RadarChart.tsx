@@ -42,7 +42,6 @@ export default function RadarChart({ components }: { components: SandboxComponen
   const dataPoints = AXES.map((ax, i) => point(i, components[ax.key]))
   const polygon = dataPoints.map((p) => `${p.x},${p.y}`).join(' ')
 
-  // Concentric rings at 20%, 40%, 60%, 80%, 100%
   const rings = [20, 40, 60, 80, 100].map((pct) =>
     AXES.map((_, i) => {
       const { x, y } = point(i, pct)
@@ -51,19 +50,17 @@ export default function RadarChart({ components }: { components: SandboxComponen
   )
 
   return (
-    <svg viewBox="0 0 320 320" className="w-full max-w-xs mx-auto">
-      {/* Rings */}
+    <svg viewBox="0 0 320 320" className="mx-auto w-full max-w-xs">
       {rings.map((pts, ri) => (
         <polygon
           key={ri}
           points={pts}
           fill="none"
-          stroke="#1a1a2e"
+          stroke="#263242"
           strokeWidth={1}
         />
       ))}
 
-      {/* Axis lines */}
       {AXES.map((_, i) => {
         const end = axisEnd(i)
         return (
@@ -71,26 +68,23 @@ export default function RadarChart({ components }: { components: SandboxComponen
             key={i}
             x1={CX} y1={CY}
             x2={end.x} y2={end.y}
-            stroke="#1a1a2e"
+            stroke="#263242"
             strokeWidth={1}
           />
         )
       })}
 
-      {/* Data polygon */}
       <polygon
         points={polygon}
-        fill="#00ff8818"
-        stroke="#00ff88"
+        fill="#38bdf820"
+        stroke="#38bdf8"
         strokeWidth={1.5}
       />
 
-      {/* Data points */}
       {dataPoints.map((p, i) => (
-        <circle key={i} cx={p.x} cy={p.y} r={3} fill="#00ff88" />
+        <circle key={i} cx={p.x} cy={p.y} r={3} fill="#4ade80" />
       ))}
 
-      {/* Axis labels */}
       {AXES.map((ax, i) => {
         const lp = labelPos(i)
         return (
@@ -101,7 +95,7 @@ export default function RadarChart({ components }: { components: SandboxComponen
             textAnchor="middle"
             dominantBaseline="central"
             fontSize="9"
-            fill="#555566"
+            fill="#8a95a6"
             fontFamily="monospace"
           >
             {ax.label.toUpperCase()}

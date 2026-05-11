@@ -32,15 +32,15 @@ export default async function PatchNotePage({ params }: { params: Promise<{ slug
   const { meta, content } = result!
 
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className="mx-auto max-w-3xl px-4 pb-10 pt-24 sm:px-6 md:pt-8 lg:px-8">
       <PatchHeader meta={meta} />
-      <div className="prose prose-sm prose-invert max-w-none font-mono
-        prose-headings:text-neon prose-headings:font-mono
-        prose-p:text-[#cccccc] prose-p:text-sm
+      <div className="prose prose-sm prose-invert max-w-none rounded-lg border border-border/80 bg-surface/70 p-5 font-mono shadow-2xl shadow-black/20
+        prose-headings:text-cyan prose-headings:font-mono
+        prose-p:text-ink/90 prose-p:text-sm
         prose-strong:text-white
         prose-hr:border-border
         prose-a:text-cyan prose-a:no-underline hover:prose-a:underline
-        prose-li:text-[#cccccc] prose-li:text-sm">
+        prose-li:text-ink/90 prose-li:text-sm">
         <MDXRemote source={content} components={mdxComponents} />
       </div>
     </div>
